@@ -4,13 +4,44 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "otel-eval-bridge"
-version = "0.1.0"
-description = "Bridge OpenTelemetry/Phoenix GenAI traces to eval cases and manifests."
+version = "0.1.2"
+description = "Convert OTLP and Phoenix GenAI trace exports into redacted local eval cases and manifests."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [{ name = "AuraOne", email = "opensource@auraone.ai" }]
-keywords = ["opentelemetry", "phoenix", "evals", "traces", "genai"]
+keywords = [
+  "evals",
+  "genai",
+  "opentelemetry",
+  "otlp",
+  "phoenix",
+  "redaction",
+  "traces",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://auraone.ai/open"
+Source = "https://github.com/auraoneai/otel-eval-bridge"
+Issues = "https://github.com/auraoneai/otel-eval-bridge/issues"
+Documentation = "https://github.com/auraoneai/otel-eval-bridge#readme"
+"Data Contract" = "https://github.com/auraoneai/otel-eval-bridge/blob/main/README.md#input-and-output-contract"
+Changelog = "https://github.com/auraoneai/otel-eval-bridge/blob/main/CHANGELOG.md"
+Security = "https://github.com/auraoneai/otel-eval-bridge/security/policy"
 
 [project.scripts]
 otel-eval-bridge = "otel_eval_bridge.cli:main"
@@ -20,4 +51,3 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
-
