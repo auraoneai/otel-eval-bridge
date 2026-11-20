@@ -1,16 +1,8 @@
 # otel-eval-bridge
 
-`otel-eval-bridge` converts exported OpenTelemetry or Phoenix-style GenAI spans
-into local eval cases while preserving trace and span references.
+Convert OpenTelemetry GenAI trace exports into local eval cases.
 
-## At a Glance
-
-| | |
-| --- | --- |
-| Job | Extract trace-linked eval inputs, expected values, observations, and provider/model metadata. |
-| Built for | Eval engineers and observability teams turning recorded traces into regression inputs. |
-| Differentiator | Dependency-free file bridge with default secret and email redaction. |
-| Produces | JSONL eval cases, a trace-reference manifest, and eval results attached back to cases. |
+Part of [Agent Studio Open](https://auraone.ai/open/agent-studio-open), the AuraOne MCP and A2A agent trace debugger and replay tool.
 
 ## Install
 
@@ -35,6 +27,18 @@ otel-eval-bridge attach /tmp/eval-cases.jsonl examples/eval_results.json \
 
 The bundled trace export produces two eval cases and an
 `auraone.eval-run-manifest.v1` manifest.
+
+## At a Glance
+
+| | |
+| --- | --- |
+| Job | Extract trace-linked eval inputs, expected values, observations, and provider/model metadata. |
+| Built for | Eval engineers and observability teams turning recorded traces into regression inputs. |
+| Differentiator | Dependency-free file bridge with default secret and email redaction. |
+| Produces | JSONL eval cases, a trace-reference manifest, and eval results attached back to cases. |
+
+`otel-eval-bridge` converts exported OpenTelemetry or Phoenix-style GenAI spans
+into local eval cases while preserving trace and span references.
 
 ## Input and Output Contract
 
