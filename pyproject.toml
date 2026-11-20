@@ -35,7 +35,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://auraone.ai/open"
+Homepage = "https://auraone.ai/open/agent-studio-open"
 Source = "https://github.com/auraoneai/otel-eval-bridge"
 Issues = "https://github.com/auraoneai/otel-eval-bridge/issues"
 Documentation = "https://github.com/auraoneai/otel-eval-bridge#readme"
